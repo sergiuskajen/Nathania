@@ -1,0 +1,653 @@
+    *{
+        margin: 0px;
+        padding: -10px;
+        font-family: 'Prata', serif;
+    }
+
+    body {
+        max-width: 100vw;
+        background-color: #312115;
+        overflow-x: hidden;
+    }
+
+    .unscroll {
+        overflow-y: hidden;
+    }
+    
+
+    #preweb {
+        position: fixed;
+        z-index: 1000;
+        height: 100vh;
+        width: 100vw;
+        background-color: #312115;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+    }
+
+    .pwbox {
+        padding: 50px;
+        width: fit-content;
+        color: #312115;
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pwbox h2 {
+        font-size: 30pt;
+    }
+
+    .pwbox p {
+        margin-top: 25px;
+    }
+
+    .pwbox input {
+        margin-top: 20px;
+        padding: 5px 10px 5px 10px;
+        background-color: transparent;
+        border: 2px solid #312115;
+        border-radius: 20px;
+    }
+
+    .pwbox button{
+        margin-top: 20px;
+        padding: 10px 0 10px 0;
+        width: 100%;
+        color: #fff;
+        background-color: #312115;
+        border: transparent;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+
+    .header {
+        width: 100%;
+        height: 20vh;
+        padding: 10px 20px 0px 20px;
+        display: grid;
+        place-items: center;
+        background-color: #ffffff81;
+    }
+
+    #cover-image {
+        height: calc(20vh + 10px);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: url(img/5431519.jpg);
+    }
+
+    .title-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile_picture img {
+        border-radius: 100%;
+    }
+
+    a {
+        
+        text-decoration: none;
+    }
+
+    .title {
+        margin-left: 10px;
+        font-size: 40px;
+        text-align: center;
+        color: #563822;
+        font-weight: 600;
+    }
+
+    .bi-list {
+        background-color: transparent;
+        box-shadow: none;
+        color: #ffffff;
+    }
+
+    .pengantar {
+        height: 90vh;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        box-sizing: border-box;
+    }
+
+    .pengantar h2 {
+        margin-top: 10vh;
+        font-weight: 100;
+        font-size: 50pt;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pengantar h2 p {
+        font-size: 20px;
+    }
+
+    .img-pengantar {
+        height: fit-content;
+        width: 100vw;
+    }
+
+    .img-pengantar::after {
+        content: "Let Start Our Journey";
+        display: grid;
+        align-items: center;
+        font-size: 30pt;
+        letter-spacing: 5px;
+        font-weight: 600;
+        justify-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        height: 100px;
+        width: 100vw;
+        background-color: #ffffff;
+        color: #563822;
+    }
+
+    .img-pengantar video {
+        width: 100vw;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: -5;
+        opacity: 0.2;
+    }
+
+.biodata {
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+    padding-top: 100px;
+    background-image: url(img/bg.png);
+    background-size: cover;
+}
+.biodata::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 100vh;
+    left: 0;
+    height: 780vh;
+    width: 100vw;
+    background-color: #fffffff5;
+}
+
+.chapter1, .chapter2, .chapter3 {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chapter2, .chapter3 {
+    margin-top: 150px;
+}
+
+.content-chapter {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.biodata h2 {
+    margin-top: 10px;
+    font-size: 35pt;
+}
+
+.teks {
+    font-family: 'Prata', serif;
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 15pt;
+   width: 40%;
+   text-align: justify; 
+}
+
+.teks::first-letter {
+    font-size: 50pt;
+}
+
+
+.content-chapter .photos {
+    width: 30%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photobox {
+    height: 5cm;
+    width: 5cm;
+    margin-top: 5px;
+    background-color: #312115;
+    border: 5px solid #312115;
+}
+
+.photobox:nth-child(odd) {
+    rotate: -15deg;
+}
+
+.photobox:nth-child(even) {
+    rotate: 15deg;
+}
+.chapter1 .photobox:nth-child(1) {
+    background-image: url(img/photo\ 2.jpg);
+    background-size: contain;
+}
+
+.chapter1 .photobox:nth-child(2) {
+    background-image: url(img/photo1.jpeg);
+    background-size: contain;
+}
+
+.chapter1 .photobox:nth-child(3) {
+    background-image: url(img/photo3.jpg);
+    background-size: contain;
+}
+
+.chapter1 .photobox:nth-child(4) {
+    background-image: url(img/photo4.jpg);
+    background-size: cover;
+}
+
+.chapter1 .photobox:nth-child(5) {
+    background-image: url(img/photo5.jpg);
+    background-size: cover;
+}
+
+.chapter2 .photobox:nth-child(1){
+    background-image: url(img/photo21.jpg);
+    background-size: cover;
+}
+.chapter2 .photobox:nth-child(2){
+    background-image: url(img/photo22.jpg);
+    background-size: cover;
+}
+.chapter2 .photobox:nth-child(3){
+    background-image: url(img/photo23.JPG);
+    background-size: cover;
+}
+.chapter2 .photobox:nth-child(4){
+    background-image: url(img/photo24.JPG);
+    background-size: cover;
+}
+.chapter2 .photobox:nth-child(5){
+    background-image: url(img/photo25.JPG);
+    background-size: cover;
+}
+.chapter2 .photobox:nth-child(6){
+    background-image: url(img/photo26.JPG);
+    background-size: cover;
+}
+
+.chapter3 .photobox:nth-child(1){
+    background-image: url(img/photo31.jpg);
+    background-size: cover;
+}
+.chapter3 .photobox:nth-child(2){
+    background-image: url(img/photo32.jpg);
+    background-size: cover;
+}
+.chapter3 .photobox:nth-child(3){
+    background-image: url(img/photo33.jpg);
+    background-size: cover;
+}
+.chapter3 .photobox:nth-child(4){
+    background-image: url(img/photo34.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.galery {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galery-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 80px;
+}
+
+.galery .galerybox {
+    height: 5cm;
+    width: 5cm;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #312115;
+    border: 5px solid #312115;
+}
+
+.galery-content .galerybox:nth-child(1) {
+    background-image: url(N/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(2) {
+    background-image: url(N/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(3) {
+    background-image: url(N/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(4) {
+    background-image: url(N/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(5) {
+    background-image: url(N/5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(6) {
+    background-image: url(N/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(7) {
+    background-image: url(N/7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(8) {
+    background-image: url(N/8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(9) {
+    background-image: url(N/9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(10) {
+    background-image: url(N/10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(11) {
+    background-image: url(N/11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(12) {
+    background-image: url(N/12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(13) {
+    background-image: url(N/13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(14) {
+    background-image: url(N/14.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(15) {
+    background-image: url(N/15.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(16) {
+    background-image: url(N/16.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(17) {
+    background-image: url(N/17.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(18) {
+    background-image: url(N/18.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(19) {
+    background-image: url(N/19.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(20) {
+    background-image: url(N/20.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(21) {
+    background-image: url(N/21.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(22) {
+    background-image: url(N/22.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(23) {
+    background-image: url(N/23.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.galery-content .galerybox:nth-child(24) {
+    background-image: url(N/24.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.documentary {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.documentary a {
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: #312115;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.documentary a:hover {
+    opacity: 0.7;
+}
+
+.letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.letterbox {
+    width: 50%;
+    padding: 30px;
+    margin-top: 30px;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 2px 2px 50px #00000075;
+}
+
+.letterbox p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.footer {
+    font-size: 28px;
+    color: #fff;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: #312115;
+}
+
+.penutup {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    color: #563822;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.penutup h3 {
+    font-size: 35px;
+}
+
+.penutup button {
+    color: #fff;
+    padding: 20px;
+    border: transparent;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #312115;
+    cursor: pointer;
+}
+
+.penutup a {
+    color: #fff;
+}
+
+@media (max-width:600px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #preweb {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .header {
+        height: 15vh;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #cover-image {
+        width: 100vw;
+        height: calc(15vh + 10px);
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .pengantar h2 {
+        width: 80%;
+        font-size: 40pt;
+    }
+
+    .img-pengantar video {
+        position: relative;
+        width: 240vw;
+        top: -39px;
+        left: -272px;
+        margin-top: -600px;
+    }
+    
+    .img-pengantar::after {
+        letter-spacing: 0;
+        font-size: 20pt;
+    }
+
+    .biodata {
+        margin-top: -70px;
+    }
+
+    .content-chapter {
+        flex-direction: column;
+    }
+
+    .teks {
+        width: 65%;
+        font-size: 18px;
+    }
+    .content-chapter .photos {
+        margin-left: 145px;
+    }
+    .galery .galerybox {
+        height: 3cm;
+        width: 3cm;
+    }
+    .galery-content {
+        margin-left: 60px;
+    }
+
+    .documentary h2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 25pt;
+    }
+    .letterbox {
+        width: 75%;
+    }
+
+    .letterbox p {
+        font-size: 17px;
+        line-height: 2;
+    }
+
+    .footer h3 {
+        text-align: center;
+    }
+
+    .penutup {
+        height: 100vh;
+    }
+
+    .penutup h3 {
+        font-size: 30px;
+    }
+
+    .biodata::before {
+        height: 1670vh;
+    }
+}
+
